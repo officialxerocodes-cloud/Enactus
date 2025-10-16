@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enactus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-text"><img src="logo.jpg" height="60" alt="logo">INNOVISION</span> 
+            </div>
+            <div class="navbar">
+                
+                <span><a href="#home"><i class="fa-solid fa-house-user"></i>Home</a></span>
+                <span><a href="#lineup"><i class="fa-solid fa-calendar"></i>Lineup</a></span>
+                <span><a href="#countdown"><i class="fa-solid fa-hourglass-half"></i>Countdown</a></span>
+                <span><a href="#gallery"><i class="fa-solid fa-images"></i>Gallery</a></span>
+                <span><a href="#contact"><i class="fa-solid fa-id-badge"></i>Contact Us</a></span>
+                
+            </div>
+        </nav>
+    </header> 
+    <main> 
+
+        <section id="home" class="hero">
+            <div class="home-col">
+                <h1>INNOVISION 2025</h1>
+                <p>Innovision is NSUT’s annual tech fest, celebrating innovation, creativity, and competition. With a wide range of events from robotics to business challenges, it brings together the brightest minds from across the country.</p>
+            </div>
+            <div class="home-col-img">
+                <a href="https://www.instagram.com/innovisionnsut/reels/?hl=en"><img src="logo.jpg" class="logo-img" alt="logo"></a>
+                <h3>Think. Build. Innovate</h3>
+            </div>
+        </section>
+        <section id="countdown">
+            <div class="countdownclass">
+                
+                <span id="days">--</span>DAYS
+                <span id="hours">--</span>HOURS
+                <span id="minutes">--</span>MINUTES
+                <span id="seconds">--</span>SECONDS
+            </div>
+        </section>
+        <section id="lineup">
+            <h2>🧭 Run of Show</h2>
+            <div class="lineup-col">
+                <button id="lineup-col-btn1" class="lineup-col-btn1"><span><strong>Day 1 </strong></span><span>Inauguration <i id="arrow1" class="fa-solid fa-arrow-down"></i></span></button>
+            </div>
+            <div id="lineup-col-btn1-info" class="lineup-col-btn1-info" style="display: none;" >
+                🎉 The inauguration of Innovision, NSUT’s flagship tech fest, marks the beginning of an exciting celebration of innovation and talent. It brings together 💡 bright minds, 🌟 visionary ideas, and 🛠️ cutting-edge technology, setting the stage for two days of inspiration, creativity, and discovery. 🚀
+            </div>
+            <div class="lineup-col">
+                <button id="lineup-col-btn2" class="lineup-col-btn2"><span><strong>Day 2 </strong></span><span>Coding Hackathon<i id="arrow2" class="fa-solid fa-arrow-down"></i></span></button>
+            </div>
+            <div id="lineup-col-btn2-info" class="lineup-col-btn2-info" style="display: none;">
+                💻 The second day of Innovision brings an adrenaline-filled Coding Hackathon, where brilliant minds come together to ⚙️ solve real-world challenges through technology. 🚀 Participants will collaborate, innovate, and code their way to creative solutions — showcasing their 🔧 technical skills, 🤝 teamwork, and 🧠 problem-solving abilities in this intense and exciting competition.
+            </div>
+            <div class="lineup-col">
+                <button id="lineup-col-btn3" class="lineup-col-btn3"><span><strong>Day 3 </strong></span><span>Cultural Night <i id="arrow3" class="fa-solid fa-arrow-down"></i></span></button>
+            </div>
+            <div id="lineup-col-btn3-info" class="lineup-col-btn3-info" style="display: none;">
+                🎉 The final day of Innovision concludes with a vibrant Cultural Night celebrating 🎨 creativity and 🌍 diversity. Participants unwind after the intense hackathon with an evening filled with 🎶 music, 💃 dance, 🎭 drama, and captivating performances. It’s a night to 🌟 relax, 🤝 connect, and celebrate the spirit of innovation and togetherness.
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>🖼️ Visuals</h2>
+            <div class="gallery-pics-parent">
+                <div class="gallery-pic">
+                    <img src="pic3.jpg" width="500"  alt="error">
+                </div>
+                <div class="gallery-pic">
+                    <img src="pic4.jpg" width="500" alt="error">
+                </div>
+                <div class="gallery-pic">
+                    <img src="pic2.jpg" width="500" alt="error">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>🔗 Connect</h2>
+            
+            <div class="register-event-parent">
+                <div class="register-event">
+                    <form class="register-form" id="register-form">
+                        <h3>🎫 Claim Your Pass</h3>
+                        <span>👤Name: </span><input type="name" placeholder="Name" required><br>
+                        <span>📧Email: </span><input type="email" placeholder="Email" required><br>
+                        <span>🎓NSUT Roll No.: </span><input type="text" placeholder="Name" required><br>
+                        <span>🎯Select an Event: </span>
+                        <select class="event-select" required><br>
+                            <option value="" disabled selected>Select a Category</option>
+                            <option value="hackathon" >Coding Hackathon</option>
+                            <option value="cssBattle" >CSS Battle</option>
+                            <option value="webdev" >WebDev</option>
+                            <option value="night" >Cultural Night</option>
+                        </select>
+                        <br>
+                        <button id="submit-btn" type="submit">Register Now</button>
+                    </form>
+
+                </div>
+                <div class="register-event">
+                    <form class="contact-form" id="contact-form">
+                        <h3>📞 Reach Out</h3><br>
+                        <span>👤Name: </span><input type="name" placeholder="Name" required><br>
+                        <span>📧Email: </span><input type="email" placeholder="Email" required><br>
+                        <span>🎓NSUT Roll No.: </span><input type="text" placeholder="Name" required><br>
+                        <span>📝Your Query: </span><textarea type="text" required placeholder="Your Query Here..." rows="4"></textarea>
+                        <button id="submit-btn2" type="submit">Submit Query</button>
+                    </form>
+
+
+                </div>
+            
+            </div>
+            
+
+        </section>
+    </main>
+    <footer>
+        <span class="social-links"><a href="https://www.instagram.com/innovisionnsut/reels/?hl=en"><i class="fa-brands fa-instagram"></i>Instagram  </a></span><span class="social-links"><a href="https://www.facebook.com/Innoitis/"><i class="fa-brands fa-facebook"></i>Facebook</a></span><span class="social-links"><a href="https://in.linkedin.com/in/innovision-nsit-861701113"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
